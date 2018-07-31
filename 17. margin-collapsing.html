@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>마진겹침 현상</title>
+
+    <style media="screen">
+      h2{
+        border:1px solid red;
+        margin:100px;
+      }
+
+      li{
+        margin:15px;
+      }
+
+      #parent{
+        /* border:1px solid tomato; */
+        margin-top:100px;
+      }
+      #child{
+        background-color: powderblue;
+        margin-top:50px
+      }
+
+      .empty{
+        margin-bottom:100px;
+        border:1px solid tomato;
+      }
+      .normal{
+        background-color: powderblue;
+        margin-top:100px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <h1>1. 일반적인 마진겹침 현상</h1>
+    겹치는 두 마진 중 큰 값이 두 사이의 마진 값이 된다!
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li>js</li>
+    </ul>
+
+    <br>
+    <h1>2. 부모자식 마진겹침 현상</h1>
+    parent 마진값과 child 마진값 중 큰 값이 전체의 마진값으로 된다!
+    <div id="parent">
+      <div id="child">
+        Hello
+      </div>
+    </div>
+
+    <br>
+    <h1>3. 마진겹침 현상</h1>
+    <div class="empty"></div>
+    <div class="normal">normal    </div>
+  </body>
+</html>
