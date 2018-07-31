@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>position</title>
+
+    <style media="screen">
+      html{border:1px solid gray;}
+      div{
+        border:8px solid tomato;
+        margin:10px;
+      }
+      .other{}
+      .parent{}
+      .me{
+        position:relative;
+        /* left:100px; */
+        /* right:100px */
+        top:100px;
+        /* bottom:100px */
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="other">other</div>
+    <div class="parent">
+      parent
+      <div class="me">
+        me
+      </div>
+    </div>
+  </body>
+</html>
