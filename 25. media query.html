@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>media query</title>
+
+    <style media="screen">
+      @media (max-width:600px){
+        body{
+          background-color:green;
+        }
+      }
+      @media (max-width:400px){
+        body{
+          background-color:red;
+        }
+      }
+      @media (min-width:601px){
+        body{
+          background-color:blue;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+    0   ~ 400px:red <br>
+    401 ~ 600px:green <br>
+    601 ~      :blue
+  </body>
+</html>
