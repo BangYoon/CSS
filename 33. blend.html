@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>background-blend-mode</title>
+
+    <style media="screen">
+      .blend{
+        height:400px;
+        border:5px solid;
+        background-color: rgba(255, 0, 0, 0.5);
+        background-size:contain;
+        background-image: url('http://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg');
+        background-blend-mode: saturation;
+        transition:background-color 3s;
+      }
+      .blend:hover{
+        background-color: rgba(255, 0, 0, 1);
+        transition:background-color 2s;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="blend">
+
+    </div>
+  </body>
+</html>
